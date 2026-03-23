@@ -17,3 +17,9 @@ if op == 1:
     num1 = int(input("Digite o primeiro número:"))
     num2 = int(input("Digite o segundo número:"))
     print("O resultado é:", num1 + num2)
+
+elif op == 2:
+    print("Você escolheu subtrair") 
+    num1 = int(input("Digite o primeiro número:"))
+    num2 = int(input("Digite o segundo número:"))
+    print("O resultado é:", num1 - num2)
