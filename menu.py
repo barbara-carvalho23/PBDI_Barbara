@@ -33,3 +33,6 @@ elif op == 4:
     num1 = int(input("Digite o primeiro número:"))
     num2 = int(input("Digite o segundo número:"))
     print("O resultado é:", num1 / num2)
+elif op == 0:
+    print("Você escolheu sair")
+    exit()
