@@ -28,3 +28,8 @@ elif op == 3:
     num1 = int(input("Digite o primeiro número:"))
     num2 = int(input("Digite o segundo número:"))
     print("O resultado é:", num1 * num2)
+elif op == 4:
+    print("Você escolheu dividir")
+    num1 = int(input("Digite o primeiro número:"))
+    num2 = int(input("Digite o segundo número:"))
+    print("O resultado é:", num1 / num2)
