@@ -36,3 +36,5 @@ elif op == 4:
 elif op == 0:
     print("Você escolheu sair")
     exit()
+else:
+    print("Opção inválida")
