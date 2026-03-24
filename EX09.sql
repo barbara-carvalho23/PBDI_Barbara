@@ -163,3 +163,36 @@ BEGIN
 
 END;
 $$;
+
+# QUESTÃO 1.4
+
+DO $$
+DECLARE
+vc INT :=  valor_aleatorio_entre(1,100); 
+vv INT; 
+BEGIN
+    IF vc < 20 THEN
+        vv = vc * 1.45;
+    ELSE
+        vv = vc * 1.30;
+    END IF;
+    RAISE NOTICE 'O produto foi comprado por R$ % e foi vendido por R$ %', vc,vv;
+END; 
+$$
+
+# QUESTÃO 1.4 CASE
+
+DO $$
+DECLARE
+vc INT :=  valor_aleatorio_entre(1,100); 
+vv INT; 
+BEGIN
+    CASE 
+    WHEN vc < 20 THEN
+        vv = vc * 1.45;
+    ELSE
+        vv = vc * 1.30;
+    END CASE;
+    RAISE NOTICE 'O produto foi comprado por R$ % e foi vendido por R$ %', vc,vv;
+END; 
+$$
